@@ -7,10 +7,10 @@ class FeatureCard extends Component {
     M.AutoInit();
   }
   render() {
-    const {pic, name, price} = this.props
+    const {pic, name, price, link} = this.props
     return(
       <div className="Feature-wrapper card-panel hoverable">
-        <a href="/">
+        <a href={link}>
           <div className="Feature-image">
           <img className="responsive-img" src={pic} alt={name} />
           <span className="Feature-title grey-text text-darken-3">

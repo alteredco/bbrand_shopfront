@@ -13,7 +13,7 @@ class NavBar extends Component {
         <a href = "/" className= "NavBar-logo brand-logo left grey-text text-darken-3">
           B.BRAND</a>
           <ul className="NavBar-list right hide-on-med-and-down">
-            <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3">NEW</a></li>
+            <li className="NavBar-listItem"><a href="/new" className="grey-text text-darken-3">NEW</a></li>
             <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3"> TOPS</a></li>
             <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3"> TROUSERS</a></li>
             <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3">DRESSES</a></li>

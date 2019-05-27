@@ -17,11 +17,13 @@ class Feature extends Component {
         </div>
         <div className="row">
           <div className="col sm12 m4">
-            <FeatureCard
+            <a href="/item">
+              <FeatureCard
             pic="https://i.ibb.co/D85Jw5w/white-frill-dress.jpg"
             name = "White Frill Dress" 
             price = "$30"
             />
+            </a>
           </div>
           <div className="col sm12 m4">
             <FeatureCard

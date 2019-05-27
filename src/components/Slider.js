@@ -20,7 +20,7 @@ class Slider extends Component {
             <div className="caption center-align">
               <h1 className="Slider-headline">What's new in store?</h1>
               <h3>We've got you covered.</h3>
-              <a className="waves-effect waves-light btn-large light-blue darken-4">SHOP NEW</a>
+              <a href="/new" className="waves-effect waves-light btn-large light-blue darken-4">SHOP NEW</a>
             </div>
           </li>
           <li>
