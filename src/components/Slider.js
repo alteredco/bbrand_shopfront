@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './Slider.css';
-import pic1 from "./assets/peace_pink_lady.jpg";
-import pic2 from "./assets/clothes_rack.jpg";
-import pic3 from "./assets/yellow_smile.jpg";
+import pic1 from "../assets/peace_pink_lady.jpg";
+import pic2 from "../assets/clothes_rack.jpg";
+import pic3 from "../assets/yellow_smile.jpg";
 import M from "materialize-css";
 
 class Slider extends Component {

@@ -9,7 +9,6 @@ class Feature extends Component {
     M.AutoInit();
   }
   render() {
-    const {name, price} = this.props
     return(
       <div className="Feature-wrapper">
         <div className="FeatureTitle">

@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
-import NavBar from './NavBar';
-import Slider from './Slider';
-import Main from './Main';
-import Feature from './Feature';
-import Newsletter from './Newsletter';
-import Contact from './Contact';
+import NavBar from './components/NavBar';
+import Slider from './components/Slider';
+import Main from './components/Main';
+import Feature from './components/Feature';
+import Newsletter from './components/Newsletter';
+import Contact from './components/Contact';
 
 function App() {
   return (
