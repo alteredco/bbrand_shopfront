@@ -9,7 +9,7 @@ class Item extends Component {
     M.AutoInit();
   }
   render() {
-    const {name, price} = this.props
+    const {pic, name, price} = this.props
     return(
       <div>
         <div className="NavRow row">
@@ -17,9 +17,9 @@ class Item extends Component {
         </div>
         <div className="Item-wrapper card-panel">
           <ItemImg 
-              pic="https://i.ibb.co/xj7c8X0/peacock-heels.jpg"
-              name = "Peacock Heels"
-              price = "$55"
+              pic="https://i.ibb.co/D85Jw5w/white-frill-dress.jpg"
+              name = "White Frill Dress"
+              price = "$30"
           />
         </div>
       </div>

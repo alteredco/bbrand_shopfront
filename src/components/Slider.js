@@ -28,7 +28,7 @@ class Slider extends Component {
             <div className="caption right-align">
               <h1 className="Slider-headline">Style Diva?</h1>
               <h3>Try our  new stylist tool.</h3>
-              <a className="waves-effect waves-light btn-large light-blue darken-4">SHOP STYLES</a>
+              <a href="link" className="waves-effect waves-light btn-large light-blue darken-4">SHOP STYLES</a>
             </div>
           </li>
           <li>
@@ -36,7 +36,7 @@ class Slider extends Component {
             <div className="caption right-align">
               <h1 className="Slider-headline">Sale on now!!</h1>
               <h3>Items up to 70% off!</h3>
-              <a className="waves-effect waves-light btn-large light-blue darken-4">SHOP CLEARANCE</a>
+              <a href="link" className="waves-effect waves-light btn-large light-blue darken-4">SHOP CLEARANCE</a>
             </div>
           </li>
         </ul>

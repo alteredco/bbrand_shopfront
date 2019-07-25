@@ -4,6 +4,7 @@
 }
 
 .Feature-wrapper img { 
-  min-width: 100%;
-  max-height: 50vh;
+  min-width: 20vh;
+  max-width: 100%;
+  max-height: 75vh;
 }
