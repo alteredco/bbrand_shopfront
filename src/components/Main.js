@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import "./Main.css";
 import M from "materialize-css";
 
 class Main  extends Component {

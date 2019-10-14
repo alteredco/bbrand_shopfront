@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import "./Contact.css";
 import M from "materialize-css";
 
 class Contact extends Component {

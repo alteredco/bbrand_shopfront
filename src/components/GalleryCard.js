@@ -1,27 +1,39 @@
 import React, {Component} from 'react';
-import "./GalleryCard.css";
+import PropTypes from 'prop-types';
 import M from "materialize-css";
 
 class GalleryCard extends Component {
   componentDidMount() {
     M.AutoInit();
   }
+  static propTypes = {
+    pic: PropTypes.string.isRequired, 
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number,
+    id: PropTypes.number
+  }
+
   render() {
-    const {pic, name, price, link} = this.props
+    const {
+      pic, 
+      name, 
+      price,
+      index
+    } = this.props
     return(
-      <div className="Gallery-wrapper card-panel">
-          <div className="Gallery-image">
-          <a href={link}>
+      <div className="Card-wrapper card-panel">
+        <figcaption className="Card-title grey-text text-darken-3">
+          <p>{name}</p> 
+          <p>{"$"+price}</p>
+        </figcaption>
+        <figure className="Card-image">
+          <a href={"/item/" +index}>
             <img className="responsive-img" src={pic} alt={name} />
-            <span className="Gallery-title grey-text text-darken-3">
-              <p>{name}</p> 
-              <p>{price}</p>
-            </span>
           </a>
-          <span className="cart-btn waves-effect waves-dark btn-sm white darken-4">
-              <p>Add to cart <i class="small material-icons">shopping_cart</i></p>
-          </span>
-        </div>
+        </figure>
+        <span className="cart-btn waves-effect waves-dark btn-sm white darken-4">
+          <p>Add to cart <i className="small material-icons">shopping_cart</i></p>
+        </span>
       </div>
     )
   }

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './New.css';
-import NavBar from '../components/NavBar';
 import GalleryCard from '../components/GalleryCard';
 import M from "materialize-css";
 
@@ -12,9 +11,6 @@ class New extends Component {
   render() {
     return (
       <div>
-        <div className="NavRow row">
-        <NavBar />
-        </div>
         <div className="row">
         <div className="New-wrapper">
         <div className="New-title">

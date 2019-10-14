@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import "./Newsletter.css";
 import M from "materialize-css";
 
 class Newsletter extends Component {
@@ -18,10 +17,10 @@ class Newsletter extends Component {
           <div className="row">
             <div className="input-field col s12">
               <input id="email" type="email" className="validate" />
-                  <button class="btn waves-effect waves-light btn-large light-blue darken-4" type="submit" name="action">Submit <i class="material-icons right">send</i>
+                  <button className="btn waves-effect waves-light btn-large light-blue darken-4" type="submit" name="action">Submit <i className="material-icons right">send</i>
                 </button>
-                <label for="email">Enter your email</label>
-                <span class="helper-text" data-error="please enter a valid email"></span>
+                <label>Enter your email</label>
+                <span className="helper-text" data-error="please enter a valid email"></span>
             </div>
           </div>
         </form>

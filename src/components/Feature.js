@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-import "./Feature.css";
 import M from "materialize-css";
 import FeatureCard from "./FeatureCard";
 
+// const handleRandomItem= (array) => {
+//   const randIndex = Math.floor((Math.random()* array.length())-1)
+//   return randIndex;
+// }
+
 class Feature extends Component {
   componentDidMount() {
-    // Auto initialize all the Materialize things!
     M.AutoInit();
   }
   render() {
@@ -17,13 +20,11 @@ class Feature extends Component {
         </div>
         <div className="row">
           <div className="col sm12 m4">
-            <a href="/item">
               <FeatureCard
             pic="https://i.ibb.co/D85Jw5w/white-frill-dress.jpg"
             name = "White Frill Dress" 
             price = "$30"
             />
-            </a>
           </div>
           <div className="col sm12 m4">
             <FeatureCard

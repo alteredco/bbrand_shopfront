@@ -1,26 +1,25 @@
 import React from 'react';
-import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import New from './pages/New';
+import Item from './pages/Item';
 import NavBar from './components/NavBar';
-import Slider from './components/Slider';
-import Main from './components/Main';
-import Feature from './components/Feature';
-import Newsletter from './components/Newsletter';
-import Contact from './components/Contact';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-      <Slider />
-      <Main />
-      <Feature />
-      <Newsletter />
-      <Contact />
-      <div className="footer">
-        <h5>©Wendy Kakuda 2019</h5>
-      </div>
-    </div>
+    <BrowserRouter>
+  <div>
+    <NavBar />
+    <Switch>
+     {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ }
+     <Route path="/item" component={Item} />
+     <Route path="/new" component={New} />
+     <Route path="/index.html" component={Home} />
+    <Route path="/" component={Home} /> 
+    </Switch>
+  </div> 
+</BrowserRouter>
   );
 }
 

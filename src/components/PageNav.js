@@ -1,17 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 class PageNav extends React.Component {
     render(){
-        
-        
-
         if ((window.location.pathname !== "/") && (window.location.pathname !== "/index.html")) {
 
         return(
-
         <div className="container">
         <div className="row">
          <div className="col">

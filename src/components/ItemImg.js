@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import "../components/ItemImg.css";
 import M from "materialize-css";
 
 class ItemImg extends Component {

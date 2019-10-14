@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import './NavBar.css';
+import React, { Component } from "react";
 import M from "materialize-css";
 
 class NavBar extends Component {
@@ -9,28 +8,120 @@ class NavBar extends Component {
   }
   render() {
     return (
-      <div  className="NavBar-items nav-wrapper">
-        <a href = "/" className= "NavBar-logo brand-logo left grey-text text-darken-3">
-          B.BRAND</a>
-          <ul className="NavBar-list right hide-on-med-and-down">
-            <li className="NavBar-listItem"><a href="/new" className="grey-text text-darken-3">NEW</a></li>
-            <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3"> TOPS</a></li>
-            <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3"> TROUSERS</a></li>
-            <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3">DRESSES</a></li>
-            <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3">ACCESSORIES</a></li>
-            <li className="NavBar-listItem"><a href="/" className="grey-text text-darken-3">CLEARANCE</a></li>
-            <li className="NavBar-listItem">
-              <a href="/" className="grey-text text-darken-3">About</a>
-            </li>
-            <li className="NavBar-listItem">
-              <a href="/" className="grey-text text-darken-3">Contact</a>
-            </li>
-            <li className="NavBar-listItem">
-              <a href="/" className="grey-text text-darken-3"><i class="small material-icons">shopping_cart</i>0</a>
-            </li>
-          </ul>
+      <React.Fragment>
+      <div className="navbar-fixed">
+        <nav>
+        <div className="NavBar-items Nav-wrapper ">
+            <a
+              href="/"
+              className="NavBar-logo brand-logo white-text"
+            >
+              B.BRAND
+            </a>
+            <a href="/" data-target="mobile-demo" className="sidenav-trigger white-text"><i className="small material-icons">menu</i></a>
+            <ul className="NavBar-list hide-on-med-and-down">
+              <li className="NavBar-listItem">
+                <a href="/new" className="white-text">
+                  NEW
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  {" "}
+                  TOPS
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  {" "}
+                  TROUSERS
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  DRESSES
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  ACCESSORIES
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  CLEARANCE
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  About
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  Contact
+                </a>
+              </li>
+              <li className="NavBar-listItem">
+                <a href="/" className="white-text">
+                  <i className="small material-icons">shopping_cart</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    )
+      <ul className="side-nav" id="mobile-demo">
+      <li>
+                <a href="/new">
+                  NEW
+                </a>
+              </li>
+              <li>
+                <a href="/" >
+                  {" "}
+                  TOPS
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  {" "}
+                  TROUSERS
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  DRESSES
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  ACCESSORIES
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  CLEARANCE
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/" >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <i className="material-icons">shopping_cart</i>
+                </a>
+              </li>
+          </ul>
+          </React.Fragment>
+    );
   }
 }
 

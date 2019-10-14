@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,4 +17,211 @@ a {
 a:hover {
   color: #fff;
   font-weight: 700;
- }
+}
+
+/* BackBtn */
+.btn {
+  background-color: #01405e;
+  margin-top: 1em;
+}
+
+/* Contact */
+.Contact-wrapper {
+  margin: 5% 10%;
+}
+
+.Contact-logo {
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.Contact-list {
+  font-size: 1.75em;
+  text-align: left;
+}
+
+/* Feature */
+.Feature-wrapper {
+  margin: 5%;
+  padding: 0;
+}
+
+.Feature-title {
+  font-weight: 700;
+  padding: 1%;
+}
+
+/* FeatureCard */
+.Feature-title {
+  text-align: center;
+  font-size: 1em;
+}
+
+.Feature-image {
+  order: -1;
+  align-self: center;
+}
+
+/* ItemImg */
+
+/* Main */
+.Main-wrapper {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.Main-subtitle {
+  font-style: italic;
+}
+
+.Main-article {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+/* NavBar */
+nav ul li:hover {
+  background-color: rgba(255, 222, 203, 0.9);
+}
+
+nav i,
+i.material-icons {
+  line-height: 4.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.Nav-wrapper {
+  padding-left: 1em;
+  background-color: #434343;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.NavBar-logo {
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 800;
+  font-family: "Raleway", san-serif;
+  cursor: pointer;
+}
+
+.NavBar-list {
+  margin-left: 25%;
+}
+
+.NavBar-listItem {
+  font-size: 1.5em;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.side-nav {
+  position: fixed;
+  width: 240px;
+  left: -105%;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: left;
+}
+
+/* Newsletter */
+.Newsletter-wrapper {
+  margin: 2%;
+  padding: 8% 20%;
+  background-color: #e4dfdf;
+}
+
+.Newsletter-subtitle {
+  font-style: italic;
+}
+
+/* Slider */
+.Slider-wrapper {
+  display: inline-block;
+}
+
+.Slider-headline {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.slides li:active {
+  background-color: #01405e;
+}
+
+/* "NEW" page */
+.New-wrapper {
+  margin: 2rem;
+}
+
+.New-title {
+  font-weight: 700;
+  padding: 2rem;
+  background-color: #ffe4e4;
+}
+
+.New-gallery {
+  margin-top: 1rem;
+}
+
+.New-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* GalleryCard */
+.Card-wrapper {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
+}
+
+.Card-wrapper:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.Card-image {
+  order: -1;
+  align-self: center;
+  overflow: hidden;
+}
+
+.Card-image img {
+  transition: transform 0.8s ease;
+}
+
+.Card-image:hover img {
+  transform: scale(1.25);
+}
+
+.cart-btn {
+  padding: 0 0.5em;
+}
+
+.cart-btn:hover {
+  color: #a1057a;
+}
+
+/* Item Page */
+.Item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
