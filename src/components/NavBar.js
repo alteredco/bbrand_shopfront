@@ -1,77 +1,88 @@
 import React, { Component } from "react";
 import M from "materialize-css";
+import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
+  state = {
+    isSideMenuOpen: false
+  }
+
   componentDidMount() {
     // Auto initialize all the Materialize things!
     M.AutoInit();
   }
+
+  toggleSideMenu= () =>{
+    const currentState = this.state.isSideMenuOpen
+    this.setState( {isSideMenuOpen: !currentState });
+  }
+
   render() {
+    let menuClass = this.state.isSideMenuOpen?'side-nav-active':'side-nav'
     return (
       <React.Fragment>
       <div className="navbar-fixed">
         <nav>
         <div className="NavBar-items Nav-wrapper ">
-            <a
-              href="/"
+            <NavLink to="/"
               className="NavBar-logo brand-logo white-text"
             >
               B.BRAND
-            </a>
-            <a href="/" data-target="mobile-demo" className="sidenav-trigger white-text"><i className="small material-icons">menu</i></a>
+            </NavLink>
+            <a href="/" data-target="mobile-demo" className="sidenav-trigger white-text" onMouseEnter={ this.toggleSideMenu.bind(this)}><i className="small material-icons">menu</i></a>
             <ul className="NavBar-list hide-on-med-and-down">
               <li className="NavBar-listItem">
-                <a href="/new" className="white-text">
+                <NavLink to="/new" className="white-text">
                   NEW
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   {" "}
                   TOPS
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   {" "}
                   TROUSERS
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   DRESSES
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   ACCESSORIES
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   CLEARANCE
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   Contact
-                </a>
+                </NavLink>
               </li>
               <li className="NavBar-listItem">
-                <a href="/" className="white-text">
+                <NavLink to="/" className="white-text">
                   <i className="small material-icons">shopping_cart</i>
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <ul className="side-nav" id="mobile-demo">
+      <ul className={menuClass} id="mobile-demo">
       <li>
                 <a href="/new">
                   NEW

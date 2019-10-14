@@ -12,11 +12,10 @@ const App = () => {
   <div>
     <NavBar />
     <Switch>
-     {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ }
-     <Route path="/item" component={Item} />
-     <Route path="/new" component={New} />
-     <Route path="/index.html" component={Home} />
-    <Route path="/" component={Home} /> 
+     <Route path="/item" render={ () => <Item />}/>
+     <Route path="/new" render={()=> <New />} />
+     <Route exact path="/index.html" render={()=> <Home />} />
+    <Route exact path="/" render={()=> <Home />} /> 
     </Switch>
   </div> 
 </BrowserRouter>

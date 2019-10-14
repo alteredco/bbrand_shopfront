@@ -134,6 +134,10 @@ i.material-icons {
   will-change: left;
 }
 
+.side-nav-active {
+  position: inherit;
+}
+
 /* Newsletter */
 .Newsletter-wrapper {
   margin: 2%;
